@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>個人履歷 — 吳祺胤</title>
+  <style>
+  :root{
+    --bg:#f8f7f4;
+    --text:#2e2e2e;
+    --muted:#7a7a7a;
+    --accent:#a68b6a;
+    --card:#ffffff;
+  }
+  *{box-sizing:border-box;font-family:"Noto Sans TC", "Hiragino Sans", "Microsoft JhengHei", sans-serif;}
+  body{margin:0;background:var(--bg);color:var(--text);line-height:1.7;}
+  .wrap{max-width:880px;margin:60px auto;padding:0 24px;}
+  .card{background:var(--card);border-radius:18px;box-shadow:0 4px 20px rgba(0,0,0,0.06);overflow:hidden;display:grid;grid-template-columns:260px 1fr;}
+  aside{background:#f1f0ed;padding:32px;display:flex;flex-direction:column;align-items:center;}
+  .avatar{width:140px;height:140px;background:#ddd;border-radius:18px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+  .avatar img{width:100%;height:100%;object-fit:cover;}
+  .name{margin-top:18px;font-size:22px;font-weight:600;color:#3b3b3b;}
+  .role{font-size:14px;color:var(--muted);margin-top:4px;}
+  .info{margin-top:18px;font-size:14px;color:var(--muted);width:100%;}
+  .info div{margin-bottom:4px;}
+  .section-title{margin-top:24px;margin-bottom:8px;font-size:15px;color:var(--accent);border-bottom:1px solid rgba(0,0,0,0.08);padding-bottom:4px;width:100%;}
+  .skill{display:flex;flex-wrap:wrap;gap:6px;}
+  .chip{background:#eae7e1;padding:5px 10px;border-radius:12px;font-size:13px;color:#555;}
+  .main{padding:40px;}
+  h2{font-size:18px;font-weight:600;color:#3c3c3c;margin-top:0;border-left:4px solid var(--accent);padding-left:10px;}
+  .lead{color:#555;margin-top:10px;font-size:15px;white-space: pre-line;}
+  .block{margin-top:28px;}
+  .edu-item,.job-item{padding:14px 16px;background:#faf9f7;border-radius:12px;margin-top:10px;}
+  .muted{color:var(--muted);font-size:13px;}
+  
+  @media(max-width:760px){
+    .card{grid-template-columns:1fr;}
+    aside{flex-direction:column;align-items:center;padding:20px;}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" id="resumeCard">
+      <aside class="side">
+        <div class="avatar">
+          <img src="picccc.JPG" alt="個人照片">
+        </div>
+        <div class="name">吳祺胤</div>
+        <div class="role">主修：資工系</div>
+
+        <div class="info">
+          <div><strong>學號：</strong>112021089</div>
+          <div><strong>Email：</strong>112021089@live.asia.edu.tw</div>
+          <div><strong>所在地：</strong>台灣 • 新竹縣</div>
+        </div>
+
+        <div class="section-title">技能</div>
+        <div class="skill">
+          <div class="chip">打籃球</div>
+          <div class="chip">打工</div>
+          <div class="chip">打遊戲</div>
+          <div class="chip">資料蒐集與統整</div>
+        </div>
+
+        <div class="section-title">語言</div>
+        <div class="skill">
+          <div class="chip">國語（母語）</div>
+          <div class="chip">英文（中等）</div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <section>
+          <h2>自我介紹</h2>
+          <div class="lead">
+            嗨～您好！我是資訊工程系四年級的吳祺胤。明年即將畢業，希望能順利完成學業並投入職場。
+
+            在資訊流動快速的大數據時代，我不吝於學習新知。我個性獨立自主，具備創新思維，喜歡與人來往、結交新朋友。我能善用各個學習空間及資源，在多元的資訊交流中，精進專業知識。對於各方面都有很大的興趣與好奇心，善於蒐集與統整資料，並以耐心及細心的態度面對困境。
+          </div>
+        </section>
+
+        <section class="block">
+          <h2>教育背景</h2>
+          <div class="edu-item">
+            <div style="font-weight:700">亞洲大學 / 資訊工程系</div>
+            <div class="muted">學士 • 2023 - 2026</div>
+            <div style="margin-top:8px;color:var(--muted);font-size:14px">主修課程：程式設計、資料結構、演算法、網頁開發。</div>
+          </div>
+        </section>
+
+        <section class="block">
+          <h2>工作經驗</h2>
+          <div class="job-item">
+            <div style="font-weight:700">NVIDIA (實習/模擬體驗)</div>
+            <div class="muted">軟體研發工程師</div>
+            <div style="margin-top:8px;color:var(--muted);font-size:14px">參與軟體開發與系統優化流程學習。</div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
